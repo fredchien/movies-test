@@ -1,6 +1,6 @@
 /**
  * @author [Frederic Chien]
- * @email [fred.chien@domatech.com.br]
+ * @email [contato@kyuubi.com.br]
  * @create date 08-03-2023 18:28:43
  * @modify date 08-03-2023 18:28:43
  * @desc [description]
@@ -14,6 +14,12 @@ import { UserRepositories } from '../repositories/UsersRepositories';
  usersRoutes.post("/", (req: Request, res: Response) => {
 
     const {name, email, password} = req.body;
+
+    const userAlreadyExists = userRepositories.findByEmail(email);
+
+    if(userAlreadyExists){
+      return res.status(400).json({message: "User already exists"})
+    }
 
     userRepositories.create({name, email, password});
 

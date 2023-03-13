@@ -1,6 +1,6 @@
 /**
  * @author [Frederic Chien]
- * @email [fred.chien@domatech.com.br]
+ * @email [contato@kyuubi.com.br]
  * @create date 08-03-2023 18:20:55
  * @modify date 08-03-2023 18:20:55
  * @desc [description]
