@@ -44,6 +44,30 @@ class MoviesRepositories{
                 duration: 161, 
                 image: "https://media.fstatic.com/iPjjA_8tfdayFslcvTIWgFPAb1E=/210x312/smart/filters:format(webp)/media/movies/covers/2022/10/cats_MQrsAwg.jpg",
                 created_at: new Date()
+            },
+            {
+                name: "The Last of Us",
+                description: "Vinte anos após a destruição da civilização moderna, Joel, um sobrevivente, é contratado para contrabandear Ellie, uma garota de 14 anos, para fora de uma zona opressiva de quarentena. O que começa como um pequeno trabalho logo se torna uma jornada brutal e de partir o coração, já que ambos devem atravessar os EUA e dependem um do outro para sobreviver.", 
+                category: "Drama", 
+                duration: 522, 
+                image: "https://media.fstatic.com/eJhyZ2uLmhbq42AfvwM7hE3MM1w=/210x312/smart/filters:format(webp)/media/movies/covers/2022/12/the-last-of-us.jpg",
+                created_at: new Date()
+            },
+            {
+                name: "Triângulo da Tristeza",
+                description: "Um casal de modelos são convidados para um cruzeiro de luxo.", 
+                category: "Comédia", 
+                duration: 150, 
+                image: "https://media.fstatic.com/d2bmgdKFgbufNDL7n31NwcUer8c=/210x312/smart/filters:format(webp)/media/movies/covers/2022/08/triangle_of_sadness_ver2.jpg",
+                created_at: new Date()
+            },
+            {
+                name: "Uma Cidade Sem Lei",
+                description: "Em um mundo sem armas, um andarilho misterioso, um jovem samurai e um barman planejam uma vingança contra um líder cruel e seu exército de assassinos. O filme é visualmente deslumbrante, preenchido com sequências de ação coreografadas que mistura tendências e influências.", 
+                category: "Ação", 
+                duration: 124, 
+                image: "https://media.fstatic.com/91Wbph4sME8484Te3Ld5OpZVtEI=/210x312/smart/filters:format(webp)/media/movies/covers/2011/09/a2f86ae9c1446c59797fc443b489a513.jpg",
+                created_at: new Date()
             }
     ];
     }

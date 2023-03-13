@@ -18,20 +18,28 @@
     const userAlreadyExists = userRepositories.findByEmail(email);
 
     if(!userAlreadyExists){
-        return res.status(400).json({message: "User not exists"})
+        return res.json({
+            success: false,
+            message: "User not exists"
+        });
     }
 
     const comparePass = await userRepositories.comparePass(password, email);
 
     if(!comparePass){
-        return res.status(400).json({message: "Password incorrect"})
+        return res.json({
+            success: false,
+            message: "Password incorrect"
+        });
     }
 
     const login = userRepositories.login(email, password);
 
-    
-
-    return res.status(201).json(login);
+    return res.json({
+        success: true,
+        message: "Login check",
+        token: login
+    });
 
  });
 
