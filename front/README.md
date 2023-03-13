@@ -1,46 +1,48 @@
-# Getting Started with Create React App
+# Movies Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Movies Test, criado como estudo.
 
-## Available Scripts
+### Pré-requisitos
 
-In the project directory, you can run:
+NodeJs, reactjs
 
-### `npm start`
+Antes de instalar as dependências no projeto, você precisa já ter instalado na sua máquina o Node.Js. Caso não tenha, basta realizar o download [Aqui](https://nodejs.org/en/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Instalando as Dependências
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Abra o cmd (caso esteja utilizando o Windows) e digite a path do seu projeto
 
-### `npm test`
+```
+cd "C:\Users\NomeDoComputador\Documents\..."
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Depois, digite no cmd a seguinte instrução em cada uma das pastas (front, back):
 
-### `npm run build`
+```
+npm install, ou se preferir, utilize o yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ao digitar a instrução acima, automaticamente ele irá baixar todas as dependências listadas no arquivo package.Json. Criando assim, uma pasta no projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `node_modules` - que contêm os packages do npm que precisará para o projeto.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Executando localmente
 
-### `npm run eject`
+No cmd, execute a seguinte opção:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- `yarn dev` - deixa o servidor online (Pasta back).
+- `yarn start` - deixa o servidor online (Pasta front)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Recursos utilizados no desenvolvimento:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- [eslint](https://eslint.org);
+- [eslint-config-airbnb-base](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base);
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier);
+- [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import);
+- [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier);
+- [nodemon](https://nodemon.io);
+- [prettier](https://prettier.io);
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Autor
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Frederic Chien** - _Initial work_ - [fredchien](https://github.com/fredchien)
